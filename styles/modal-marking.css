@@ -1,0 +1,47 @@
+.modal-marking-content {
+    position: absolute;
+    width: 25em;
+    height: 20em;
+    user-select: none;
+    cursor: pointer;
+}
+
+    .modal-marking-content h1, 
+    .modal-marking-content h2 {
+        color: aquamarine;
+        font-family: 'Fredoka', sans-serif;
+        text-align: center;
+        margin: 0;
+    }
+        .modal-marking-content h2 {
+            color: rgb(94, 187, 156);
+            border-bottom: 2px solid rgb(184, 184, 184);
+            padding-bottom: 10px;
+        }
+
+    .modal-marking-content > div {
+        margin-top: 1em;
+        margin: 1em auto 0 auto;
+    }
+        .icon-col {
+            display: inline-block;
+            width: 4em;
+            margin-left: 3em;
+            font-size: 1.6em;
+            font-family: 'Fredoka', sans-serif;
+            color: aquamarine;
+            text-align: center;
+        }
+
+        #points-col, 
+        #hits-col, 
+        #fails-col, 
+        #time-col {
+            display: inline-block;
+            width: 7em;
+            font-size: 1.6em;
+            color: white;
+        }
+
+
+   

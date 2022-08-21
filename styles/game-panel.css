@@ -1,0 +1,277 @@
+body {
+    background-image: linear-gradient(115deg, #35c8ff 0, #3cb5f2 50%, #3fa3da 100%);
+    margin: 0px;
+}
+
+.left-side {
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    height: 100%;
+}
+
+    #exit-button {
+        display: inline-block;
+        width: 22%;
+        height: 2em;
+        margin-top: 2rem;
+        margin-left: 3%;
+        background-image: linear-gradient(220deg,  #f1c34b 33.33%, #f2b53c 50%, #f3a62e 66.67%);
+        border: 2px solid white;
+        border-radius: 5px;
+        font-family: 'Fredoka One', cursive;
+        color: rgb(237, 240, 237);
+        font-size: 1.5vw;
+        text-align: center;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+        #exit-button:hover {
+            color:rgba(169, 121, 9, 0.9)
+        }
+
+    .info-user {
+        display: inline-block;
+        width: 62%;
+        height: 2em;
+        margin-left: .5em;
+        font-family: 'Fredoka', sans-serif;
+        font-size: 1.5vw;
+        background-color: #fdfdff42;
+        text-align: center;
+        color: white;
+        padding: 0 .5em;
+        border-radius: 5px;
+        line-height: 0px;
+        user-select: none;
+    }
+    .level-selector {
+        position: relative;
+        margin-top: 2rem;
+        margin-left: 3vw;
+    }
+        .level-selector .level {
+            display: inline-block;
+            width: 6vw;
+            height: 2vw;
+            padding: .2vw;
+            background-color: #fdfdff42;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.5vw;
+            text-align: center;
+            color:white;
+            cursor: pointer;
+        }
+        .level-selector .border-level{
+          position: absolute;
+          top: -2px;
+          left: -2px;
+          width: 6.2vw;
+          height: 2.35vw;
+          border: 3px solid rgba(5, 93, 187, .4); 
+          border-radius: 2px;
+          transition: left 1s; 
+        }
+
+    #box-counters {
+        position: absolute;
+        top: 67vh;
+        width: 20rem;
+        height: 10rem;
+    }
+        #timer-ext{
+            position: absolute;
+            width: 12vw;
+            height: 12vw;
+            border: 2px solid white;
+            border-radius: 50%;
+            margin-left: 4vw;
+            background-color: lightblue;
+        }
+            #timer {
+                width: 86%;
+                height: 86%;
+                background-image: radial-gradient(circle at 80% 40%, #6c90d8 50%, #1d71cb 100%);
+                margin: calc(7% - 2px) calc(7% - 2px);
+                border-radius: 50%;
+                border: 2px solid white;
+                text-align: center;
+                line-height: 10.3vw;
+                color: white;
+                font-family: 'Fredoka One', cursive;
+                font-size: 5.6vw;
+                transition: color 0.7s;
+            }
+        #timer-arc {
+            position: absolute;
+            margin-left: 4vw;
+        }
+        #hits {
+            z-index: -1;
+            position: absolute;
+            width: 8vw;
+            height: 8vw;
+            background-image: radial-gradient(circle at 89.59% 16.78%,  #6cd86c 50%, #3dcb65 66.67%, #00c164 83.33%, #00b967 100%);
+            margin: calc(2vw - 2px) calc(15.5vw - 2px);
+            border-radius: 50%;
+            border: 2px solid white;
+            text-align: center;
+            line-height: 8vw;
+            color: white;
+            font-family: 'Fredoka One', cursive;
+            font-size: 4vw;
+        }
+    
+#space-circle {
+    display: inline-block;
+    position: relative;
+    width: 45%;
+    height: 100%;
+    margin: 0 auto;
+    vertical-align: top;
+}
+    #space-circle #letter-position {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: 'Fredoka', sans-serif;
+        font-size: 2.5vw;
+        text-align: center;
+        color: rgba(226, 40, 40, 0.9);
+        padding: .5%;
+        letter-spacing: 1px;
+    }
+    #space-circle #question {
+        position: absolute;
+        width: 70%;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: 'Fredoka', sans-serif;
+        font-size: 2vw;
+        text-align: center;
+        padding: .5%;
+        letter-spacing: 1px;
+        user-select: none;
+    }
+        #space-circle #question span {
+            color: rgb(255, 255, 255);
+            font-style: normal;
+        }
+        
+    #ok-button {
+        display: block;
+        position: absolute;
+        width: 6em;
+        height: 2em;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-image: linear-gradient(40deg, #97b4f2 0, #789ee5 100%);
+        border: 2px solid white;
+        border-radius: 10px;
+        font-family: 'Fredoka One', cursive;
+        color: rgb(237, 240, 237);
+        font-size: 1.5vw;
+        text-align: center;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+        #ok-button:hover {
+            color: #3487e0;
+        }
+    
+    .letter {
+        position: absolute;
+        background-image: radial-gradient(circle at 84.87% 25.58%, #9eb1e5 0, #6c90d8 50%, #1d71cb 100%);
+        border-radius: 50%;
+        border: 2px solid white;
+        color: white;
+        text-align: center;
+        font-family: 'Fredoka One', cursive;
+        user-select: none;
+        line-height: 1.4em;
+    }
+        #nn {
+            line-height: 1.50em;
+        }
+
+.right-side {
+    position: relative;
+    display: inline-block;
+    width: 27%;
+    height: 100%;
+    vertical-align: top;
+}
+    .pasapalabra-info {
+        display: inline-block;
+        position: absolute;
+        width: 22vw;
+        margin-top: 5%;
+        margin-left: 2vw;
+        font-family: 'Fredoka', sans-serif;
+        font-size: 1.2rem;
+        text-align: left;
+        background-color: rgb(112 112 112 / 37%);;
+        color: rgb(219, 219, 219);
+        padding: 1em;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px 3px rgba(0, 128, 128, 0.2);
+        transition: opacity 0.7s;
+        user-select: none;
+    }
+    .pasapalabra-info .fpp {
+        border: 2px solid rgb(219, 219, 219);
+        border-radius: 5px;
+        padding: .4em;
+    }
+    #inputs-user {
+        position: relative;
+        width: 100%;
+        top: 76vh;
+    }
+        .play-button {
+            display: block;
+            position: absolute;
+            width: 72%;
+            height: 3em;
+            margin-top: 3%;
+            margin-left: 15%;
+            background-image: linear-gradient(220deg,  #f1c34b 33.33%, #f2b53c 50%, #f3a62e 66.67%, #f59724 83.33%, #f7881e 100%);
+            border: 2px solid white;
+            border-radius: 10px;
+            font-family: 'Fredoka One', cursive;
+            color: rgb(237, 240, 237);
+            font-size: 1.5vw;
+            text-align: center;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+            .play-button:hover {
+                color:rgba(169, 121, 9, 0.9)
+            }
+        #answer {
+            display: block;
+            position: absolute;
+            width: 88%;
+            height: 3rem;
+            margin-top: 0%;
+            margin-left: 2%;
+            background-color: rgba(72, 72, 72 , 0.4);
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            border: 2px solid white;
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.6vw;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            cursor: text;
+        }
+            #answer::placeholder {
+                font-size: 1.5vw;
+                text-align: center;
+                color: rgb(172, 172, 172);            
+                letter-spacing: 0;
+            }

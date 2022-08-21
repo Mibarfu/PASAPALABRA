@@ -1,0 +1,120 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pasapalabra HTML-CSS-JS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/game-panel.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/modal-user.css">
+    <link rel="stylesheet" href="styles/modal-ranking.css">
+    <link rel="stylesheet" href="styles/modal-marking.css">
+</head>
+<body>
+    <div class="modal-user">
+        <div class="modal-user-content">
+            <div class="name-user-button">
+                <p id="user-close"><span>&#215;</span></p>
+                <p class="label-user-name">Cual es tu nombre?</p>
+                <input type="text" placeholder="Miguel Angel">
+                <button>✔</button>
+                <p class="msg-user-name"></p>
+            </div>
+        </div>
+    </div>
+    <div class="modal-ranking">
+        <div class="modal-ranking-content">
+            <h1>PASAPALABRA WEB</h1>
+            <h2>Ranking</h2>
+            <div class="header">
+                <p class="position"></p><p class="name"></p><p class="points">PUNTOS</p><p class="hits">ACIERTOS</p>
+            </div>
+            <div class="no-players">😥 <span>Sin jugadores</span></div>
+            <ul></ul>
+        </div>
+    </div>
+    <div class="modal-marking">
+        <div class="modal-marking-content">
+            <h1>Puntuación</h1>
+            <h2 id="name-marking"></h2>
+            <div>
+                <span class="icon-col">🏆</span><span id="points-col"></span>
+            </div>
+            <div>
+                <span class="icon-col">🟢</span><span id="hits-col"></span>
+            </div>
+            <div>
+                <span class="icon-col">🔴</span><span id="fails-col"></span>
+            </div>
+            <div>
+                <span class="icon-col">⏳</span><span id="time-col"></span>
+            </div>
+        </div>
+    </div>
+    <div class="left-side">
+        <button id="exit-button">Salir</button>
+        <div class="info-user"><p id="player"></p></div>
+        <div class="level-selector">
+            <div class="level" id="easy">easy</div>
+            <div class="level" id="middle">middle</div>
+            <div class="level" id="hard">hard</div>
+            <div class="border-level"></div>
+        </div>
+        <div id="box-counters">
+            <div id="timer-ext">
+                <div id="timer"></div>
+            </div>
+            <canvas id="timer-arc"></canvas>
+            <div id="hits"></div>
+        </div>
+    </div>
+    <div id="space-circle">
+        <div id="a" class="letter">A</div>
+        <div id="b" class="letter">B</div>
+        <div id="c" class="letter">C</div>
+        <div id="d" class="letter">D</div>
+        <div id="e" class="letter">E</div>
+        <div id="f" class="letter">F</div>
+        <div id="g" class="letter">G</div>
+        <div id="h" class="letter">H</div>
+        <div id="i" class="letter">I</div>
+        <div id="j" class="letter">J</div>
+        <div id="l" class="letter">L</div>
+        <div id="m" class="letter">M</div>
+        <div id="n" class="letter">N</div>
+        <div id="nn" class="letter">Ñ</div>
+        <div id="o" class="letter">O</div>
+        <div id="p" class="letter">P</div>
+        <div id="q" class="letter">Q</div>
+        <div id="r" class="letter">R</div>
+        <div id="s" class="letter">S</div>
+        <div id="t" class="letter">T</div>
+        <div id="u" class="letter">U</div>
+        <div id="v" class="letter">V</div>
+        <div id="x" class="letter">X</div>
+        <div id="y" class="letter">Y</div>
+        <div id="z" class="letter">Z</div>
+        <p id="letter-position"></p>
+        <p id="question"></p>
+        <button id="ok-button">OK</button>
+    </div>
+    <div class="right-side">
+        <div class="pasapalabra-info">
+            <p class="fpp">Como hacer PASAPALABRA:</p>
+            <p>- Envia una respuesta vacía, en la caja de respuestas que aparecerá al presionar el botón de [Jugar!].</p>
+        </div>
+        <div id="inputs-user">
+            <button class="play-button">Jugar!</button>
+            <input type="text" id="answer" placeholder="Escribe aquí tu respuesta" autocomplete="off">
+        </div>
+    </div>
+    <script src="sources/ModalUser.js"></script>
+    <script src="sources/ModalRanking.js"></script>
+    <script src="sources/ModalMarking.js"></script>
+    <script src="sources/Counters.js"></script>
+    <script src="sources/Donut.js"></script>
+    <script src="sources/interface.js"></script>
+    <script src="sources/control_game.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
