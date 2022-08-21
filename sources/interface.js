@@ -162,7 +162,6 @@ const levelChange = (element) => {
 }
 
 
-
 modalUserExitElemt.addEventListener("click", () => {
     modalUser.hiddenModalUser();
     modalRanking.showModalRanking(usuarios, newUser);
