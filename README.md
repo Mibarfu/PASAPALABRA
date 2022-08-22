@@ -13,3 +13,7 @@
 
 ## Panel de ranking
 ![Muestra 1](imagen-muestra-4.PNG)
+
+### Posibles futuras actualizaciones
+
+Uso de CSS-GRID/FLEX-BOX, formato RESPONSIVE.
