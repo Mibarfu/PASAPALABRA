@@ -9,12 +9,13 @@ class Counters {
         this.isBlinking = false;
         this.idTimerBlinking;
 
-        this.timerExt = document.getElementById("timer-ext");
-        this.timerArcExt = parseInt(getComputedStyle(document.getElementById("timer-ext")).width) + 4;
-        this.timerArc = document.getElementById("timer-arc");
-    
-        this.timer = document.getElementById("timer");
-        this.hits = document.getElementById("hits");
+        this.timerExt;
+        this.timerArcExt;
+        this.timerArc;
+        this.timer;
+        this.hits;
+
+        this.readSets();
     }
 
     timerBlinking(timer) {
@@ -110,4 +111,13 @@ class Counters {
         }
 
     };
+
+    readSets() {
+        this.timerExt = document.getElementById("timer-ext");
+        this.timerArcExt = parseInt(getComputedStyle(document.getElementById("timer-ext")).width) + 4;
+        this.timerArc = document.getElementById("timer-arc");
+    
+        this.timer = document.getElementById("timer");
+        this.hits = document.getElementById("hits");
+    }
 }

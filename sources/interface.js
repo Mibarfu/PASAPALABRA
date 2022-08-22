@@ -186,3 +186,9 @@ easterEggWind.addEventListener("click", () => {
 levelSelector.forEach((selector) => {
     selector.addEventListener("click", eventLevelChange, true);
 })
+
+window.addEventListener("resize", () => {
+    donut.readSets();
+    counters.readSets();
+    donut.generateRosco(0.95);
+ }, true )

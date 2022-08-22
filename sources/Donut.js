@@ -2,10 +2,12 @@ class Donut {
 
     constructor() {
 
-        this.widthSpaceCircle = parseFloat(getComputedStyle(document.getElementById("space-circle")).width);
-        this.heightSpaceCircle = parseFloat(getComputedStyle(document.getElementById("space-circle")).height);
-        this.sizeSphere = parseFloat(getComputedStyle(document.getElementById("space-circle")).width) * 0.09;
-        this.letters = document.querySelectorAll(".letter");
+        this.widthSpaceCircle;
+        this.heightSpaceCircle;
+        this.sizeSphere;
+        this.letters;
+
+        this.readSets();
     }
 
     adjustCircleSize() {
@@ -69,5 +71,12 @@ class Donut {
             this.setLetterState(letter.textContent, 0);
         });
     };
+
+    readSets() {
+        this.widthSpaceCircle = parseFloat(getComputedStyle(document.getElementById("space-circle")).width);
+        this.heightSpaceCircle = parseFloat(getComputedStyle(document.getElementById("space-circle")).height);
+        this.sizeSphere = parseFloat(getComputedStyle(document.getElementById("space-circle")).width) * 0.09;
+        this.letters = document.querySelectorAll(".letter");
+    }
 
 }

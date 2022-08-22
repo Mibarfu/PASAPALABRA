@@ -130,28 +130,25 @@ body {
     margin: 0 auto;
     vertical-align: top;
 }
-    #space-circle #letter-position {
-        position: absolute;
-        top: 25%;
+    .donut-center {
+        position: relative;
+        width: 70%;
+        top: 45%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
+    }
+
+    #space-circle #letter-position {
         font-family: 'Fredoka', sans-serif;
         font-size: 2.5vw;
         text-align: center;
         color: rgba(226, 40, 40, 0.9);
-        padding: .5%;
         letter-spacing: 1px;
     }
     #space-circle #question {
-        position: absolute;
-        width: 70%;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%,-50%);
         font-family: 'Fredoka', sans-serif;
         font-size: 2vw;
         text-align: center;
-        padding: .5%;
         letter-spacing: 1px;
         user-select: none;
     }

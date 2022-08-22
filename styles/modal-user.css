@@ -25,21 +25,22 @@
         margin-top: 0;
     }
     .modal-user-content input {
-        display: inline-block;
+        position: absolute;
         width: 65%;
         height: 20%;
-        padding-left: 10px;
+        padding-left: 8px;
         margin-left: 7%;
         border-radius: 10px;
         border: none;
         font-family: 'Fredoka', sans-serif;
-        font-size: 1.5vw;
+        font-size: 130%;
     }
         .modal-user-content input::placeholder {
             color: rgb(201, 201, 201);
         }
     .modal-user-content button {
-        display: inline-block;
+        position: absolute;
+        margin-left: 74%;
         width: 20%;
         height: 20%;
         border-radius: 8px;
@@ -54,7 +55,7 @@
         }
 
     .modal-user-content .msg-user-name {
-        margin-top: 5%;
+        margin-top: 20%;
         color: orange;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-size: 1em;
