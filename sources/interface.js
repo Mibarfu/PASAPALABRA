@@ -113,6 +113,7 @@ const hiddenShowpasapalabraInfo = (state) => {
 
 const initializeGamePanel = (time) => {
     isInGame = false;
+    enabledLevelChange(true);
     donut.generateRosco(0.95);
     counters.resetTimeGame(time);
     counters.setTimerGame();
@@ -159,6 +160,24 @@ const levelChange = (element) => {
         
     }
     
+}
+
+const enabledLevelChange = (enable) => {
+    if (enable) {
+        borderLevel.style.visibility = "visible";
+
+        levelSelector.forEach(level => {
+            level.style.cursor = "pointer";
+        })
+    } else {
+        borderLevel.style.visibility = "hidden";
+
+        levelSelector.forEach(level => {
+            level.style.cursor = "default";
+        })
+
+    }
+
 }
 
 

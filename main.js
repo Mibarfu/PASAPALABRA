@@ -40,6 +40,7 @@ const verifyUserName = (userName) => {
 };
 
 const startGameButton = () => {
+  enabledLevelChange(false);
   hiddenShowPlayButton(false);
   donutSelection();
   resetLetters();

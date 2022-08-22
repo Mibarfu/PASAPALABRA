@@ -60,7 +60,7 @@ body {
             font-size: 1.5vw;
             text-align: center;
             color:white;
-            cursor: pointer;
+            user-select: none;
         }
         .level-selector .border-level{
           position: absolute;
@@ -158,13 +158,11 @@ body {
         }
         
     #ok-button {
-        display: block;
-        position: absolute;
+        position: relative;
         width: 6em;
         height: 2em;
-        top: 70%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translateX(-50%);
         background-image: linear-gradient(40deg, #97b4f2 0, #789ee5 100%);
         border: 2px solid white;
         border-radius: 10px;
